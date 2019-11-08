@@ -23,7 +23,7 @@
   - Click Send
 - The other clients phone should have a nice surprise! 
 
-### IOS (on MACOS)
+### IOS
 - Plug in device to computer (must be running MACOS)
 - Trust the device 
 - run project on device plugged in

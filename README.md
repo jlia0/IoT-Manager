@@ -10,24 +10,22 @@
 
 ### 🏠 [Homepage](https://github.com/JLiao98/IoT-Manager)
 
+### ⛺️ [IoT Manager - Broker Server](https://github.com/JLiao98/IoT-Manager-Broker)
+
 ## Install
 
 - `git clone git@github.com:JLiao98/IoT-Manager.git`
 - [Get flutter plugins & dark plugins](https://flutter.dev/docs/get-started/install)
 - Import the flutter project in Android Studio/Intellij/VSCode
 - `flutter doctor` to make sure you are properly setup
-- `flutter pub get` to install dependencies 
+- `flutter pub get` to install dependencies
 - `flutter run` or run the application through the IDE
-
 
 ## Usage
 
 ```sh
 flutter run
 ```
-
-## Broker Repo
-https://github.com/JLiao98/IoT-Manager-Broker
 
 ## Try it out!
 

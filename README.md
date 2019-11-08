@@ -33,7 +33,7 @@ https://github.com/JLiao98/IoT-Manager-Broker
 
 ### Android
 
-- [Download the apk](fir.im/iotmanager)
+- [Download the apk](https://fir.im/iotmanager)
 - Click connect (don't input anything into the broker fields)
 - Click on the **Subscriptions** tab
   - Input "action" in the topic

@@ -12,9 +12,13 @@
 
 ## Install
 
-```sh
-flutter install
-```
+- `git clone git@github.com:JLiao98/IoT-Manager.git`
+- [Get flutter plugins & dark plugins](https://flutter.dev/docs/get-started/install)
+- `cd iot-manager`
+- Import the flutter project in Android Studio/Intellij/VSCode
+- run `flutter doctor` to make sure you are properly setup
+- `flutter run` or run the application through the IDE
+
 
 ## Usage
 

@@ -64,7 +64,7 @@ flutter run
 
 👤 **Rakheem Dewji**
 
-- Github: [@JLiao98](https://github.com/raksdewji)
+- Github: [@raksdewji](https://github.com/raksdewji)
 
 ## 🤝 Contributing
 

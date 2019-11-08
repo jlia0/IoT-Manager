@@ -62,7 +62,7 @@ class _MyHomePageState extends State<MyHomePage> {
   int port                = 18184;
   String username         = 'kvuwrinm';
   String passwd           = 'TJaId_fJy2me';
-  String clientIdentifier;
+  String clientIdentifier = 'lamhx_' + new Random().nextInt(100).toString();
 
   mqtt.MqttClient client;
   mqtt.MqttConnectionState connectionState;
@@ -186,7 +186,7 @@ class _MyHomePageState extends State<MyHomePage> {
               width: 200.0,
               child: TextField(
                 controller: brokerController,
-                decoration: InputDecoration(hintText: 'Input broker'),
+                decoration: InputDecoration(hintText: broker),
 
               ),
             ),
@@ -194,28 +194,28 @@ class _MyHomePageState extends State<MyHomePage> {
               width: 200.0,
               child: TextField(
                 controller: portController,
-                decoration: InputDecoration(hintText: 'Port'),
+                decoration: InputDecoration(hintText: port.toString()),
               ),
             ),
             SizedBox( //Username
               width: 200.0,
               child: TextField(
                 controller: usernameController,
-                decoration: InputDecoration(hintText: 'Username'),
+                decoration: InputDecoration(hintText: username),
               ),
             ),
             SizedBox( //Passwd
               width: 200.0,
               child: TextField(
                 controller: passwdController,
-                decoration: InputDecoration(hintText: 'Passwd'),
+                decoration: InputDecoration(hintText: passwd),
               ),
             ),
             SizedBox( //Passwd
               width: 200.0,
               child: TextField(
                 controller: identifierController,
-                decoration: InputDecoration(hintText: 'Client Identifier'),
+                decoration: InputDecoration(hintText: clientIdentifier),
               ),
             ),
             SizedBox(height: 8.0),

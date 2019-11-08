@@ -27,3 +27,14 @@
 - Plug in device to computer (must be running MACOS)
 - Trust the device 
 - run project on device plugged in
+- Open the application once installed on device
+- Click connect (don't input anything into the broker fields)
+- Click on the **Subscriptions** tab
+  - Input "action" in the topic
+- If another client is connected, you can send commands be clicking on the **Messages** tab
+  - Open the **Send** tab
+  - For the message enter either "on" or "off" with topic "action"
+  - leave the details under the messsage and topic the same
+  - Click Send
+- The other clients phone should have a nice surprise!
+

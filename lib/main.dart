@@ -363,7 +363,7 @@ class _MyHomePageState extends State<MyHomePage> {
             RaisedButton(
               child: Text('add topic'),
               onPressed: () {
-                _subscribeToTopic(topicController.value.text);
+                _subscribeToTopic(dropdownValue);
               },
             ),
           ],

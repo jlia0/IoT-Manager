@@ -6,7 +6,7 @@ import 'package:iot_manager/ui/recvmsg.dart';
 import 'package:iot_manager/ui/sendmsg.dart';
 import 'dart:async';
 import 'dart:math';
-import 'package:lamp/lamp.dart';
+import 'package:fflashlight/fflashlight.dart'
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 
@@ -547,9 +547,9 @@ class _MyHomePageState extends State<MyHomePage> {
 
     if(event[0].topic == 'action'){
       if(message == 'on'){
-        Lamp.turnOn();
+        Fflashlight.on();
       }else if (message == 'off'){
-        Lamp.turnOff();
+        Fflashlight.off();
       }
     }
 

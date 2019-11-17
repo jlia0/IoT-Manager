@@ -332,6 +332,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
 
   }
+  String dropdownValue = "action";
 
   Column _buildSubscriptionsPage() {
     return Column(
@@ -341,17 +342,38 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             SizedBox(
-              width: 200.0,
-              child: TextField(
-                controller: topicController,
-                decoration: InputDecoration(hintText: 'Please enter a topic'),
+              child: DropdownButton<String>(
+                value: dropdownValue,
+
+                iconSize:24,
+                elevation:16,
+                  style: TextStyle(
+                      color: Colors.black87,
+                  ),
+                  underline: Container(
+                    height: 2,
+                    color: Colors.black38,
+                  ),
+                  onChanged: (String newValue) {
+                    setState(() {
+                      dropdownValue = newValue;
+                    });
+                  },
+                items: <String>['action', 'receive notification', 'turn on flashlight', 'turn off heater']
+                    .map<DropdownMenuItem<String>>((String value) {
+                  return DropdownMenuItem<String>(
+                    value: value,
+                    child: Text(value),
+                  );
+                })
+                    .toList(),
               ),
             ),
             SizedBox(width: 8.0),
             RaisedButton(
               child: Text('add topic'),
               onPressed: () {
-                _subscribeToTopic(topicController.value.text);
+                _subscribeToTopic(dropdownValue);
               },
             ),
           ],

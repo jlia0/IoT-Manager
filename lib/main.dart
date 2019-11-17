@@ -7,9 +7,19 @@ import 'package:iot_manager/ui/sendmsg.dart';
 import 'dart:async';
 import 'dart:math';
 import 'package:lamp/lamp.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 
-void main() => runApp(MyApp());
+main() async {
+  // Load the env variables
+  await DotEnv().load('.env');
+
+  // Start the app
+  runApp(MyApp());
+}
+
+/// Gets value for a specified env variable
+env(name) => DotEnv().env[name];
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
@@ -57,11 +67,11 @@ class _MyHomePageState extends State<MyHomePage> {
   PageController _pageController;
   int _page = 0;
 
-  String titleBar         = 'IoT-Manager';
-  String broker           = 'tailor.cloudmqtt.com';
-  int port                = 18184;
-  String username         = 'kvuwrinm';
-  String passwd           = 'TJaId_fJy2me';
+  String titleBar = 'IoT-Manager';
+  String broker = env('MQTT_DOMAIN');
+  int port = int.parse(env('MQTT_PORT'));
+  String username = env('MQTT_USER');
+  String passwd = env('MQTT_PASS');
   String clientIdentifier = 'lamhx_' + new Random().nextInt(100).toString();
 
   mqtt.MqttClient client;

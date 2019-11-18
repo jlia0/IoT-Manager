@@ -6,7 +6,7 @@ import 'package:iot_manager/ui/recvmsg.dart';
 import 'package:iot_manager/ui/sendmsg.dart';
 import 'dart:async';
 import 'dart:math';
-import 'package:fflashlight/fflashlight.dart'
+import 'package:fflashlight/fflashlight.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 

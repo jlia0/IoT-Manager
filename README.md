@@ -12,6 +12,8 @@
 
 ### ⛺️ [IoT Manager - Broker Server](https://github.com/JLiao98/IoT-Manager-Broker)
 
+## 🤳🏼 [IoT Manager - Web App](https://github.com/awave1/iot-manager-web)
+
 ## Install
 
 - `git clone git@github.com:JLiao98/IoT-Manager.git`
